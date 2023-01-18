@@ -138,6 +138,335 @@ padding-top: 60px;
 
 
 
+/* ATUL's DIV */
+.main{
+    width:90%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.main > div{
+    width:99%;
+    margin: auto;
+    background-color:rgb(64, 62, 62);
+    
+}
+.img{
+    width:100%;
+    margin: auto;
+}
+img{
+    width:100%;
+}
+.main p{
+    color:white;
+    margin-left:10px;
+}
+
+/* main2 */
+
+.main2{
+    width:90%;
+    display:flex;
+    margin-top:40px;
+   
+}
+.trending{
+    width:18%;
+    background-color:rgb(245, 242, 242);
+}
+
+.head > p{
+    margin-left:8px;
+    color: rgb(250, 54, 54);
+}
+
+.depth{
+    width:80%;
+    height:2200px;
+    margin: auto;
+    margin-left:40px;
+    padding:10px;
+    
+}
+
+.img1{
+    width:90%;
+    margin: auto;
+}
+.img1 p{
+    font-size:14px;
+    text-align: center;
+    color: rgb(97, 95, 95);
+}
+.img1 p:hover{
+    color: red;
+    cursor: pointer;
+}
+.inDepth,.video{
+    width:100%;
+    height:250px;
+   
+}
+.video{
+    margin-top:35px;
+}
+.inDepth{
+ display: grid;
+ grid-template-columns:repeat(4,1fr);
+ 
+}
+.inDepthImg{
+   width:92%;
+   /* height:250px; */
+   margin:auto;
+  
+  
+}
+.inDepthImg > div{
+    width:96%;
+    /* height:150px; */
+    margin: auto;
+    padding:5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   
+}
+ img{
+    width:100%;
+}
+.inDepthImg p{
+    color: rgb(96, 95, 95);
+}
+.one{
+    
+    height:360px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding:4px;
+}
+.one h3{
+    color: rgb(96, 95, 95);
+    margin-left:8px;
+}
+
+
+/*  */
+
+.video{
+    width:98%;
+    padding:8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height:360px;
+}
+.invideo{
+   
+    height:270px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+.lastesVid{
+    width:92%;
+    
+    border-radius:20px;
+    height:270px;
+    background-color:rgb(245, 242, 242);
+}
+.lastesVid:hover{
+    cursor: pointer;
+    color: red;
+}
+.inner{
+    width:100%;
+    /* border-radius:20px; */
+    margin: auto;
+    height:140px;
+    
+}
+.inner > img{
+    width:100%;
+    border-radius: 20px 20px 0px 0px ;
+}
+.lastesVid > p{
+    margin-top:35px;
+    margin-left:10px;
+}
+
+
+/* ----------- */
+
+.product{
+    width:98%;
+    height:1040px;
+    margin-top:20px;
+    padding:8px;
+   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* background-color:rgb(245, 242, 242); */
+}
+.inner2{
+    width:100%;
+    /* height:2200px; */
+    margin:auto;
+    margin-top:20px;
+    /* border:solid 1px red; */
+    height:980px;
+    background-color:rgb(245, 242, 242);
+}
+.nab{
+    width:100%;
+    height:60px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+}
+.nab > div{
+    width:97%;
+    height:60px;
+    margin: auto;
+   
+   background-color:rgb(215, 214, 214);
+   
+}
+.icon{
+    width:60%;
+    height:38px;
+    margin: auto;
+   margin-top:3px;
+    
+}
+.icon > img{
+    width:100%;
+    height:35px;
+}
+.text{
+    margin-top:3px;
+    font-size:12px;
+    text-align: center;
+}
+.text:hover,.icon:hover{
+    cursor: pointer;
+    color:red;
+}
+.Popular{
+    margin-left:10px;
+}
+.Phones{
+    width:98%;
+    height:200px;
+    margin: auto;
+    background-color:white;
+    border-radius:10px;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+}
+.Phones > div{
+   
+    width:90%;
+    height:190px;
+    margin: auto;
+}
+.Phones > div > div{
+   
+    width:95%;
+    margin: auto;
+    margin-top:5px;
+}
+.Phones  img{
+    width:70%;
+    height:80px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;    
+}
+.Phones p{
+    text-align: center;
+}
+.h4{
+    margin-left:10px;
+}
+.Upcoming{
+    width:98%;
+    height:200px;
+    margin: auto;
+    background-color:white;
+    border-radius:10px;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+   
+}
+.Upcoming > div{
+    width:97%;
+    height:200px;
+    
+}
+.Upcoming > div > div{
+
+    width:80%;
+    margin: auto;
+    margin-top:5px;
+}
+.Vivo{
+    text-align: center;
+}
+.Brands{
+    width:98%;
+    height:200px;
+    margin: auto;
+    background-color:white;
+    border-radius:10px;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+  
+}
+.Brands > div{
+    width:97%;
+    height:180px;
+    margin: auto;
+   
+}
+.Brands > div > div{
+    width:97%;
+    height:120px;
+    margin: auto;
+    
+}
+.Brands > div > div img{
+    width:100%;
+}
+.brandName{
+    text-align: center;
+}
+.line{
+    margin-left:8px;
+    margin-right:8px;
+}
+.under{
+    width:100%;
+    height:60px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+   
+}
+.under > div{
+    width:98%;
+    height:40px;
+    margin: auto;
+    text-align: center;
+    border-radius:30px;
+    background-color:white;
+    
+}
+.under > div >  nav{
+   margin-top:10px;
+}
+.under > div >  nav:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/*  */
+
+
 #foot {
     display: flex;
     background-color: #414347;
