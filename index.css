@@ -1,0 +1,25 @@
+#foot {
+    display: flex;
+    background-color: #414347;
+    gap: 70px;
+}
+#first_div{
+    gap: 100px;
+    padding-left: 40px;
+    display: flex;
+    background-color: #414347;
+}
+h4{
+    font-family: titillium, sans-serif;
+    font-size: 15px;
+}
+#logo_div{
+    height: 62px;
+    width: 100px;
+}
+#image{
+    display: block;
+
+    width: 50px;
+    height: 40px;
+}
