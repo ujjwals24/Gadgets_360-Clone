@@ -1,3 +1,143 @@
+/* nav bar start here */
+ body{
+    font-family: Titillium,sans-serif
+}
+.search-form {
+padding: 10px;
+font-size: 10px;
+border: 1px solid grey;
+float: left;
+/* width: 80%; */
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+#search-btn{
+float: right;
+padding: 10px;
+background:rgb(255, 104, 104);
+color: white;
+font-size: 10px;
+border: 1px solid grey;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-left: none;
+cursor: pointer;
+}
+#search-btn:hover{
+background: red;
+}
+
+#logo{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+#logo>div:nth-child(1){
+width: 30%;
+
+}
+#logo>div:nth-child(1) img{
+width: 50%;
+transition: 0.4s;
+}
+#logo>div:nth-child(1) img:hover{
+transform: scale(1.1);
+}
+#logo>div:nth-child(2){
+width: 50%;
+margin-top: 30px;
+}
+#logo>div:nth-child(2) img{
+width: 100%;
+}
+.menu-bar{
+height: 50px;
+background: rgb(245, 44, 44);
+text-align: center;
+}
+.menu-bar>div{
+display: flex;
+align-items: flex-start;
+}
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+}
+.menu-bar ul li{
+width: 120px;
+font-weight: bold;
+/* margin: 10px;
+padding: 10px; */
+}
+.menu-bar ul li a{
+text-decoration: none;
+color: black;
+}
+.dropdown{
+display: none;
+margin-top: 15px;
+position: absolute;
+left: 10px;
+width: 500px;
+}
+
+.top-nav ul{
+display: flex;
+justify-content: space-evenly;
+list-style: none;
+
+}
+.top-nav ul li{
+font-weight: 10px;
+
+}
+.top-nav ul li a{
+text-decoration: none;
+color: rgb(104, 104, 104);
+}
+.top-nav ul li a:hover{
+border-bottom: 10px solid red;
+}
+
+.menu-bar ul li:hover .dropdown{
+display: block;
+display: flex;
+position: relative;
+/* background: green; */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.menu-bar ul li:hover .dropdown ul{
+display: block;
+margin: 10px;
+}
+.menu-bar ul li:hover .dropdown ul li{
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted;
+text-align: left;
+}
+.menu-bar ul li:hover .dropdown ul li:last-child{
+border-bottom: none;
+}
+.menu-bar ul li:hover .dropdown ul li a:hover{
+color: red;
+}
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+.sticky + .content {
+padding-top: 60px;
+}
+
+
+/* nav bar ends here */
+
+
+
+
+
 #foot {
     display: flex;
     background-color: #414347;
@@ -13,13 +153,15 @@ h4{
     font-family: titillium, sans-serif;
     font-size: 15px;
 }
-#logo_div{
+/* #logo_div{
     height: 62px;
     width: 100px;
-}
+} */
 #image{
     display: block;
 
     width: 50px;
     height: 40px;
 }
+
+
