@@ -586,4 +586,163 @@ h4{
 }
 
 
+/* Shiva Singh css */
+/* *{
+    background: #fff;
+} */
+
+#main-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid rgb(246, 246, 246);
+    background: rgb(247, 247, 247);
+}
+
+
+
+.firstDiv {
+    height: 2000px;
+    /* border: 1px solid red; */
+    width: 20%;
+    background-color: white;
+}
+
+.secondDiv {
+    height: 2000px;
+    width: 75%;
+    padding-left: 20px;
+
+}
+
+h2 {
+    font-family: Titillium, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px 10px 10px 0px;
+    margin: 0px;
+}
+
+
+
+.spann {
+    font-size: 15px;
+
+}
+
+.secondDiv>h2+div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* text-align: center; */
+    background-color: white;
+   
+
+}
+
+.secondDiv>h2+div>div {
+    width: 232px;
+
+}
+
+.secondDiv>h2+div>p {
+    text-align: left;
+}
+
+.child1>div>img {
+    text-align: left;
+    border-radius: 2px;
+}
+
+.child1>div>img+p {
+    text-align: left;
+}
+
+.par1>h2 {
+    margin-top: 50px;
+}
+
+.child2 {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.child2>div {
+    width: 195px;
+    height: 250px;
+    background-color: white;
+}
+
+.child2>div>img {
+    width: 90%;
+    height: 150px;
+    border: 2px dotted black;
+    padding: 10px;
+
+}
+.par2{
+    background-color: white;
+    margin-top: 50px;
+}
+.child3{
+    display: flex;
+    justify-content: space-between;
+}
+.child3>div{
+    width: 250px;
+    
+    
+}
+
+.child3>div>img{
+    width: 100%;
+    border-radius: 2px;
+    
+}
+
+.par3{
+    margin-top: 50px;
+}
+
+.child4{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.child4>div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+}
+
+.child4>div>div{
+   margin-right: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   
+}
+
+.child4>div>div>img{
+    position: relative;
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+}
+.par4{
+    margin-top:50px ;
+}
+.child5{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+
+}
+p{
+    font-size: 20px;
+}
+
+
 
