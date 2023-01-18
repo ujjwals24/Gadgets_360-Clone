@@ -79,6 +79,7 @@ margin-top: 15px;
 position: absolute;
 left: 10px;
 width: 500px;
+background-color: white;
 }
 
 .top-nav ul{
@@ -98,7 +99,9 @@ color: rgb(104, 104, 104);
 .top-nav ul li a:hover{
 border-bottom: 10px solid red;
 }
-
+.menu-bar{
+    margin-bottom: 20px;
+}
 .menu-bar ul li:hover .dropdown{
 display: block;
 display: flex;
