@@ -492,5 +492,95 @@ h4{
     width: 50px;
     height: 40px;
 }
+/* //monojoy// */
+
+
+#container{
+    display: flex;
+    gap: 10px;
+
+}
+#container>div:nth-child(1){
+    border: 2px solid blue;
+   width: 20%;
+   gap: 20px;
+}
+#box_one>div{
+    width: 200px;
+
+}
+#container>div:nth-child(2){
+   
+    border: 2px solid blue;
+    width: 80%;
+    gap: 10px;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: auto;
+    
+}
+#products>div{
+    width: 300px;
+}
+#products>div>img{
+    width: 100%;
+}
+#Entertainment:nth-child(2)>div{
+    display: flex;
+    gap: 10px;
+    width: 1000px;
+}
+#Entertainment:nth-child(2)>div>img{
+    width: 100%;
+}
+#movies{
+    
+    display: flex;
+    gap: 10px;
+}
+#movies>div{
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 40px;
+    width: 300px;
+    gap: 40px;
+   position: relative;
+
+}
+#movies>div>div{
+    border: 2px solid gray;
+    width: 50px;
+    border-radius: 100px;
+}
+#movies>div>div>img{
+   margin-top: 5px;
+   margin-left: 5px;
+    width: 60%;
+}
+#guide{
+    background-color: #37383C;
+}
+#guide>h2{
+    color: white;
+}
+#guide>div>div>p{
+    color: white;
+}
+#guide>div:nth-child(2){
+    display: flex;
+    gap: 10px;
+    
+}
+#guide>div:nth-child(2)>div{
+    width: 400px;
+    gap: 10px;
+}
+#guide>div:nth-child(2)>div>img{
+    width: 100%;
+}
+
 
 
