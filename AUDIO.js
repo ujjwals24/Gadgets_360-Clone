@@ -56,11 +56,31 @@ function displayData(data){
 
         let price = document.createElement("p");
         price.className = "price"
-        price.innerText =  "₹."+element.price;
+        price.innerText =  element.price;
 
         let Add = document.createElement("button");
         Add.innerText = "Add To Card";
         Add.className = "Add"
+
+        Add.addEventListener("click",()=>{
+            let AddData = JSON.parse(localStorage.getItem("buy"));
+            if(AddData === null) AddData = [];
+
+            let IsAllready = false;
+            for(let i=0 ; i<AddData.length;i++){
+                if(AddData[i].id === element.id){
+                    IsAllready = true;
+                    break;
+                }
+            };
+            if( IsAllready === true){
+                swal("Already in Favourites!", "Add Something else!", "warning")
+            }else{
+                AddData.push(element);
+                localStorage.setItem("buy",JSON.stringify(AddData));
+                swal("Successfully Added to Favourite!", "See More!", "success")
+            }
+        })
 
         cardImg.append(image)
         card.append(cardImg,name,description,price,Add)
