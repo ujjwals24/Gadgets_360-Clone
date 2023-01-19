@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>telecom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         body{
+    font-family: Titillium,sans-serif
+}
+.search-form {
+padding: 10px;
+font-size: 10px;
+border: 1px solid grey;
+float: left;
+/* width: 80%; */
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+#search-btn{
+float: right;
+padding: 10px;
+background:rgb(255, 104, 104);
+color: white;
+font-size: 10px;
+border: 1px solid grey;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-left: none;
+cursor: pointer;
+}
+#search-btn:hover{
+background: red;
+}
+
+#logo{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+#logo>div:nth-child(1){
+width: 30%;
+
+}
+#logo>div:nth-child(1) img{
+width: 50%;
+transition: 0.4s;
+}
+#logo>div:nth-child(1) img:hover{
+transform: scale(1.1);
+}
+#logo>div:nth-child(2){
+width: 50%;
+margin-top: 30px;
+}
+#logo>div:nth-child(2) img{
+width: 100%;
+}
+.menu-bar{
+height: 50px;
+background: rgb(245, 44, 44);
+text-align: center;
+}
+.menu-bar>div{
+display: flex;
+align-items: flex-start;
+}
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+}
+.menu-bar ul li{
+width: 120px;
+font-weight: bold;
+/* margin: 10px;
+padding: 10px; */
+}
+.menu-bar ul li a{
+text-decoration: none;
+color: black;
+}
+.dropdown{
+display: none;
+margin-top: 15px;
+position: absolute;
+left: 10px;
+width: 500px;
+}
+
+.top-nav ul{
+display: flex;
+justify-content: space-evenly;
+list-style: none;
+
+}
+.top-nav ul li{
+font-weight: 10px;
+
+}
+.top-nav ul li a{
+text-decoration: none;
+color: rgb(104, 104, 104);
+}
+.top-nav ul li a:hover{
+border-bottom: 10px solid red;
+}
+
+.menu-bar ul li:hover .dropdown{
+display: block;
+display: flex;
+position: relative;
+/* background: green; */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.menu-bar ul li:hover .dropdown ul{
+display: block;
+margin: 10px;
+}
+.menu-bar ul li:hover .dropdown ul li{
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted;
+text-align: left;
+}
+.menu-bar ul li:hover .dropdown ul li:last-child{
+border-bottom: none;
+}
+.menu-bar ul li:hover .dropdown ul li a:hover{
+color: red;
+}
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+.sticky + .content {
+padding-top: 60px;
+}
+/* nav ends */
+/* MOnojoy Css */
+#con{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+#box1{
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+
+    
+    
+}
+#box1>div{
+    margin-top: 20px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color:#F1F1F1;
+    border-radius: 5px;
+}
+#box1>div>img{
+    width: 100%;
+}
+#box1>div>p:hover{
+    color: red;
+}
+#box2{
+    width: 60%;
+}
+#box2_first_box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+#box2_first_box>div{
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+
+}
+#box2_first_box>div>img{
+    width: 100%;
+}
+#box2_first_box>div>p:hover{
+   color: red;
+}
+#box3{
+    width: 20%;
+}
+#box3_first{
+    display: flex;
+    justify-content: space-between;
+
+}
+#box3_first1{
+    width: 100px;
+}
+#box3_first1>p:hover{
+    color: red;
+}
+#box3_first2{
+    width: 100px;
+}
+#box3_first2>p:hover{
+    color: red;
+}
+#Trending{
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+    color: red;
+    background-color: none;
+}
+#box3>h3{
+    background-color: red;
+    color: white;
+    padding: 35x 0px 5px 5px;
+    text-align: center;
+}
+
+/* footer */
+
+#foot {
+    display: flex;
+    background-color: #414347;
+    gap: 70px;
+}
+#first_div{
+    gap: 100px;
+    padding-left: 40px;
+    display: flex;
+    background-color: #414347;
+}
+h4{
+    font-family: titillium, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <div>
+        <img src="https://i.ibb.co/hfnXL9K/tech-gadgets-low-resolution-logo-black-on-white-background.png" alt="">
+        </div>
+        <div id="animation">
+            <img src="https://tpc.googlesyndication.com/simgad/10118733611423933133" alt="">
+            
+        </div>
+        </div>
+    <div class="top-nav">
+        <ul>
+            <li><a href="#">MOBILES</a></li>
+            <li><a href="#">AUDIO</a></li>
+            <li><a href="#">AUTO EXPO 2023</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">GUIDE</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">APPS</a></li>
+            <li><a href="#">TABLETS</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">WERABLES</a></li>
+            <li><a href="#">5G IN INDIA</a></li>
+            <form id="serach">
+                <input class="search-form" type="text" placeholder="Search here...">
+                <button type="submit" id="search-btn"><i class="fa fa-search"></i></button>
+              </form>
+        </ul>
+
+    </div>
+    <div class="menu-bar">
+        <div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">GUIDE</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">VIDEOS</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="#">LATEST</a></li>
+                        <li><a href="#">BUYING GUIDES</a></li>
+                        <li><a href="#">CRYPTOCURRENCY</a></li>
+                        <li><a href="#">EVENTS</a></li>
+                        <li><a href="#">HOW TOS</a></li>
+                        <li><a href="#">SPONSORED</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Reviews and First Looks</a></li>
+                        <li><a href="#">Hindi</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li><a href="">PODCASTS</a></li>
+            <li id="finder"><a href="">PRODUCT</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="">Mobiles</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">TV</a></li>
+                                        <li><a href="">Tablets</a></li>
+                                        <li><a href="">Smart Watches</a></li>
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Cameras</a></li>
+                                        <li><a href="">Gaming Consoles</a></li>
+                                        <li><a href="">Smart Bands</a></li>
+                                        <li><a href="">Speakers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Smart Speakers</a></li>
+                        <li><a href="">AC</a></li>
+                        <li><a href="">Games</a></li>
+                        <li><a href="">Refrigerator</a></li>
+                        <li><a href="">Air Cooler</a></li>
+                        <li><a href="">Air Purifier</a></li>
+                        <li><a href="">Washing Machine</a></li>
+                        <li><a href="">Inverter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li><a href=""> BARNDS</a></li>
+            <li><a href="">RECHARGE</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="">DTH RECHARGE</a></li>
+                        <li><a href="">MOBILE RECHARGE</a></li>
+                        <li><a href="">BROADBAND RECHARGE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+            <li><a href="">MORE</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="">Cryptocurrency Prices</a></li>
+                        <li><a href="">Digital Gold</a></li>
+                        <li><a href="">Gold Rate</a></li>
+                        <li><a href="">Amazon Sale</a></li>
+                        <li><a href="">Flipkart Sale</a></li>
+                        <li><a href="">Movies</a></li>
+                        <li>Web Series</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Service Centers</a></li>
+                        <li><a href="">Smart Home</a></li>
+                        <li><a href="">Community</a></li> 
+                         <li><a href="">Finance</a></li>
+                         <li><a href="">b360</a></li>
+                          <li><a href="">Silver Rate</a></li>
+                        <li><a href="">Opinions</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </li>
+        </ul>
+    </div>
+  
+    </div>
+    <!-- nav ends -->
+    <!-- container -->
+    <div id="con">
+        <div id="box1">
+            <div><img src="https://assets.gadgets360cdn.com/kostprice/assets/img/republic-day-sale_150_234_1673720000.jpeg?downsize=150:*" alt="">
+            </div>
+            <div id="Trending"><h3>TRENDING</h3></div>
+            <div><img src="https://i.gadgets360cdn.com/large/microsoft_nuance_deal_small_1646468515219.jpg?downsize=130:*" alt="">
+                <p>Mircosoft Announces Up to 10,000 Job Cuts, to Invest in Strategic Areas to Remain Competitive </p>
+            </div>
+            <div><img src="https://i.gadgets360cdn.com/large/small_1673877793372.jpg?downsize=130:*" alt="">
+                <p>Redmi Note 12 Pro 5G First Impressions: Shouldn’t Be Ignored</p>
+            </div>
+            <div><img src="https://i.gadgets360cdn.com/large/iQoo_11_5G-4_1674032864647.jpg?downsize=130:*" alt="">
+                <p>iQoo 11 5G Review: Pro Performance, Premium Price</p>
+            </div>
+          
+           
+        </div>
+        <div id="box2">
+            <h2>
+                TELECOM NEWS
+            </h2>
+            <div id="box2_first_box">
+                <div><img src="https://i.gadgets360cdn.com/large/logo_airtel_facebook_small_1671622777657.jpg?downsize=232:*" alt="">
+                    <p>Airtel Expands 5G Network Rollout in Select Areas of Noida, Ghaziabad, Faridabad: All Details</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/airtel_5g_facebook_small_1668765792722.jpg?downsize=232:*" alt="">
+                    <p>Airtel 5G Services Rolling Out in Phased Manner in Jaipur, Udaipur and Kota: All Details</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/jio_5g_reliance_small_1671596584135.jpg?downsize=232:*" alt="">
+                    <p>Himachal Pradesh to Have 5G Services in Rural and Urban Areas by 2024, IT Secretary Says</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/logo_airtel_facebook_small_1671622777657.jpg?downsize=232:*" alt="">
+                    <p>Airtel 5G Network Services Roll Out in Agra, Meerut, Kanpur, Gorakhpur and Prayagraj: Details</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/reliance_Jio_small_1616392435857.jpg?downsize=232:*" alt="">
+                    <p>Jio True 5G Services Now Launched in Uttarakhand, Rs. 650 Crore Invested for Standalone 5G Network in the State</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/google_meta_reuters_small_1670222709289.jpg?downsize=232:*" alt="">
+                    <p>EU Wants Details of Investment Plans Ahead of Legislation to Make Big Tech Pay for Telcos Network Costs</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/reliance_Jio_small_1616392435857.jpg?downsize=232:*" alt="">
+                    <p>Jio True 5G Launched in Guwahati, Reliance Said to Invest Rs. 2,500 Crore More to Deploy 5G in Assam</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/airtel_5g_india_facebook_small_1673346311691.jpg?downsize=232:*" alt="">
+                    <p>Airtel 5G Services Rolling Out in Bhubaneswar, Cuttack, and Rourkela</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/reliance_jio_net_profit_reuters_thumb_1666371596325.jpg?downsize=232:*" alt="">
+                    <p>Jio True 5G Services Launched in 10 Cities Across Uttar Pradesh, Andhra Pradesh, Kerala, Maharashtra</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/reliance_jio_reuters_small_1608007252276.jpg?downsize=232:*" alt="">
+                    <p>Jio True 5G Services Launched in Gwalior, Jabalpur, Ludhiana, Siliguri</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/airtel_5g_facebook_small_1668765792722.jpg?downsize=232:*" alt="">
+                    <p>Airtel 5G Network Rollout Expands to Select Areas in Rohtak, Hissar: All Details</p>
+                
+                </div>
+                <div><img src="https://i.gadgets360cdn.com/large/oneweb_satellite_small_1546233048160.jpg?downsize=232:*" alt="">
+                    <p>CES 2023: Qualcomm Unveils Snapdragon Satellite; Two-Way Satellite-Based Messaging for Android Phones to Arrive Soon</p>
+                
+                </div>
+
+            </div>
+        </div>
+        <div id="box3">
+             <h3>TRENDING AND TOPICS</h3>
+            <div id="box3_first">
+                <div id="box3_first1">
+                    <h4>Latest</h4>
+                    <p>Nubia Red Magic 8</p>
+                    <p>Pro</p>
+                    <p>Letv S1 Pro</p>
+                    <p>Oppo A78 5G</p>
+                    <p>Oppo A56s 5G</p>
+                    <p>Honnor 80 Pro</p>
+                    <p>Straight Scree</p>
+                    <p>Edition</p>
+                    <p>TCL 408</p>
+                    <p>TCL 40 SE</p>
+                    <p>TCL 40 R 5G</p>
+                    <p>Asus Vivobook S 16 Flip OLED</p>
+                    <p>Apple MacBook Pro 16-inch 2023</p>
+                    <p>TCL NxtPaper 12 Pro</p>
+                    <p>Lenovo Tab Extreme</p>
+                    <p>Fire-Boltt Infinity</p>
+                    <p>Redmi Watch 3</p>
+                    <p>OnePlus TV 55 Y1S Pro (55UD2A00)</p>
+                    <p>ViewSonic TD1655 15.6-inch Full-HD Portable Touch Monitor</p>
+                    <p>Nintendo Switch (OLED Model)</p>
+                    <p>Microsoft Xbox Series S</p>
+                   
+                    
+
+
+                </div>
+                <div id="box3_first2">
+                    <h4>Popular</h4>
+                    <p>Auto Expo 2023</p>
+                    <p>Amazon Pay</p>
+                    <p>Amazon Great Republic Day</p>
+                    <p>Microsoft</p>
+                    <p>Infinix Zero</p>
+                    <p>iQoo 11 5G</p>
+                    <p>Alibaba</p>
+                    <p>Xiaomi 12</p>
+                    <p>Foldable Smartphone</p>
+                    <p>Motorola Edge 40 Pro</p>
+                    <p>Apple</p>
+                    <p>Airtel 5G</p>
+                    <p>iQoo Neo 7</p>
+                    <p>Samsung Phones</p>
+                    <p>Women's IPL</p>
+                    <p>The Last of Us</p>
+                    <p>Critics Choice Awards Winners 2023</p>
+                    <p>Amazon Prime Subscription</p>
+                    <p>Mission Majnu</p>
+                    <p>New Web Series</p>
+                    <p>Best Phones Under 20000</p>
+                    <p>Veera Simha Reddy</p>
+                    <p>Trial By Fire</p>
+                    <p>Laptops Under 50000</p>
+                    <p>Smartwatches Under 5000</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="foot">
+        
+        <div id="first_div">
+            <div>
+                <h4>About Us</h4>
+                <h4>Sitemaps</h4>
+                <h4>Feedback</h4>
+                <h4>Archives</h4>
+                <h4>Contact Us</h4>
+                <h4>RSS</h4>
+            </div>
+            <div>
+                <h4>Advertise</h4>
+                <h4>Career</h4>
+                <h4>Privacy Policy</h4>
+                <h4>Ethics</h4>
+                <h4>Terms & Conditions</h4>
+                <h4>Complaint Redressal</h4>
+            
+            </div>
+    
+        </div>
+         
+        <div id="sec_div">
+            <div>
+                <h4>Gadgets 360 is available in</h4>
+                <h4>English | Hindi</h4>
+                <h4>            </h4>
+                <h4>Follow us</h4>
+                <img id="image" src="https://docs.appthemes.com/files/2018/06/social-icons.jpg" alt="">
+                
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h4>Download Ours App</h4>
+                <div id="third_div">
+                   <img id="image1" src="https://www.gadgets360.com/static/mobile/images/playstore_badge.png" alt="">
+                   <img id="image2" src="https://www.gadgets360.com/static/mobile/images/appstore_badge.png" alt="">
+                </div>
+                <h4>Download in Hindi</h4>
+                <img id="image3" src="https://www.gadgets360.com/static/mobile/images/playstore_badge.png" alt="">
+            
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+<script>
+    let img=document.getElementById("animation")
+
+setInterval(()=>{
+    if( img.style.display=="none"){
+        img.style.display="block"
+        img.style.transition="0.3s"
+    }
+    else{
+        img.style.display="none"
+        img.style.transition="0.3s"
+    }
+},3000)
+
+
+window.onscroll = function() {myFunction()}
+
+var navbar = document.getElementById("top-nav");
+var sticky = navbar.offsetTop;
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+navbar.classList.add("sticky")
+} else {
+navbar.classList.remove("sticky");
+}
+}
+</script>
