@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Page</title>
+  </head>
+  <style>
+    *{
+        margin:0px;
+        font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+    body{
+          background-color:rgb(249, 169, 169);
+        }
+   
+         #continer{
+            width:90%;
+            /* height:400px; */
+            max-width:450px;
+            margin-top:80px;
+            position:absolute;
+            top:45%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding:50px 40px 70px;
+            border-radius:20px;
+            background-color:white;
+         }
+         #email{
+            width:70%;
+           height:40px;
+           font-size:18px;
+           margin-top:20px;
+           border-radius:10px;
+           border:solid 1px gray;
+         }
+         #password{
+            width:70%;
+           height:40px;
+           font-size:18px;
+           margin-top:20px;
+           border-radius:10px;
+           border:solid 1px gray;
+         }
+         #submit{
+            margin-top:30px;
+            width:20%;
+            height:40px;
+            text-align: center;
+            font-size:18px;
+            border:18px;
+            border-radius:16px;
+            color:white; 
+            background-color:#0768eff1;
+         }
+         #submit:hover{
+          background-color:#5a9bf5;
+          cursor: pointer;
+        }
+        .image{
+            width:72%;
+            height:60px;
+            margin: auto;
+            margin-top:50px;
+            margin-left:19%;
+            display: grid;
+            gap:40px;
+            grid-template-columns:repeat(3,1fr);
+           
+         }
+         .image > div{
+           width:55%;
+           height:48px;
+           padding:8px;
+           border-radius:12px;
+           border:solid 1px rgb(185, 182, 182);
+         }
+         .image > div img{
+          width:100%;
+         }
+         .image > div:hover{
+          cursor: pointer;
+          border:solid 1px rgb(7, 122, 167);
+         }
+         .message{
+          margin-top:60px;
+          font-size:12px;
+         }
+         #home:hover{
+            cursor: pointer;
+         }
+         .navbar{
+          display:grid;
+          grid-template-columns:repeat(9,1fr);
+          width:100%;
+          height:70px;
+          justify-content: space-evenly;
+          background-color:red;
+         }
+         .navbar > div{
+          width:85%;
+          height:50px;
+          margin: auto;
+          text-align: center;
+         
+         }
+         .navbar > div h3{
+          margin-top:12px;
+         }
+         .navbar > div:hover{
+          cursor: pointer;
+          text-decoration: underline;
+         }
+
+        
+  </style>
+  <script src="https://kit.fontawesome.com/aaf04754d4.js" crossorigin="anonymous">
+     src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <body>
+
+    <!-- nav -->
+    <div class="navbar">
+      <div id="home">
+        <h3>HOME</h3>
+      </div>
+      <div>
+        <h3>GUIDE</h3>
+      </div>
+      <div>
+        <h3>FEATURES</h3>
+      </div>
+      <div>
+        <h3>VIDEOS</h3>
+      </div>
+      <div>
+        <h3>PODCASTS</h3>
+      </div>
+      <div>
+        <h3>PRODUCT</h3>
+      </div>
+      <div>
+        <h3>BARNDS</h3>
+      </div>
+      <div>
+        <h3>RECHARGE</h3>
+      </div>
+      <div>
+        <h3>MORE</h3>
+      </div>
+   </div>
+   <!-- -------------------- -->
+    
+    <div id="continer">
+      <h1>Login Details</h1>
+
+      
+      
+      <form id="form">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="email" placeholder = "Email"/><br>
+
+        <i class="fa-solid fa-key"></i>
+        <input type="password" id="password" placeholder="Password"/><br>
+
+        <input id="submit" type="submit" value="Submit" /><br>
+      </form>
+
+          <!-- -------------- -->
+
+          <div class="image">
+            <div>
+              <img src="https://www.mhpcolorado.org/wp-content/uploads/2021/02/TS-FB-Icon.png" alt="">
+            </div>
+            <div>
+              <img src="https://cdn-teams-slug.flaticon.com/google.jpg" alt="">
+            </div>
+            <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu-kopsZTuqQE7qm2d14z4sOfd053Te9VBbGBq7TxoDg&s" alt="">
+            </div>
+          </div>
+        
+             <div class="message">
+              <hr>
+              <br>
+              <p>By signing in or creating an account, you agree <br> with our Terms & conditions and Privacy statement</p>
+              <br>
+              <hr>
+             </div>
+        </div>
+
+    </div>
+  </body>
+  <script src="./Login.js"></script>
+</html>

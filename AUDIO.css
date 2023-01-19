@@ -415,3 +415,33 @@ hr{
     cursor: pointer;
     color: red;
 }
+
+/* footer */
+#foot {
+    display: flex;
+    background-color: #414347;
+    gap: 150px;
+}
+#first_div{
+    gap: 100px;
+    padding-left: 40px;
+    display: flex;
+    background-color: #414347;
+}
+h4{
+    font-family: titillium, sans-serif;
+    font-size: 15px;
+}
+/* #logo_div{
+    height: 62px;
+    width: 100px;
+} */
+#image{
+    
+
+    width: 150px;
+    height: 40px;
+}
+#image1, #image2, #image3{
+    width: 112px;
+}
