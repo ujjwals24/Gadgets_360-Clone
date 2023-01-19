@@ -501,7 +501,7 @@ h4{
 
 }
 #container>div:nth-child(1){
-    border: 2px solid blue;
+    
    width: 20%;
    gap: 20px;
 }
@@ -511,7 +511,7 @@ h4{
 }
 #container>div:nth-child(2){
    
-    border: 2px solid blue;
+    
     width: 80%;
     gap: 10px;
 }
