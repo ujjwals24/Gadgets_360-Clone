@@ -473,7 +473,7 @@ img{
 #foot {
     display: flex;
     background-color: #414347;
-    gap: 70px;
+    gap: 150px;
 }
 #first_div{
     gap: 100px;
@@ -490,10 +490,13 @@ h4{
     width: 100px;
 } */
 #image{
-    display: block;
+    
 
-    width: 50px;
+    width: 150px;
     height: 40px;
+}
+#image1, #image2, #image3{
+    width: 112px;
 }
 /* //monojoy// */
 
