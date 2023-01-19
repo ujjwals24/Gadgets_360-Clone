@@ -143,8 +143,9 @@ padding-top: 60px;
 
 /* ATUL's DIV */
 .main{
-    width:90%;
+    width:100%;
     display:grid;
+    margin: auto;
     grid-template-columns:repeat(3,1fr);
 }
 
@@ -170,9 +171,11 @@ img{
 
 .main2{
     width:90%;
+    height:1900px;
+    margin: auto;
     display:flex;
     margin-top:40px;
-   
+    /* border:solid 2px black; */
 }
 .trending{
     width:18%;
@@ -186,8 +189,8 @@ img{
 
 .depth{
     width:80%;
-    height:2200px;
-    margin: auto;
+    height:1850px;
+    
     margin-left:40px;
     padding:10px;
     
