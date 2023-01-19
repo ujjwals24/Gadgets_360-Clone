@@ -34,7 +34,6 @@ justify-content: space-between;
 }
 #logo>div:nth-child(1){
 width: 30%;
-
 }
 #logo>div:nth-child(1) img{
 width: 50%;
@@ -261,7 +260,6 @@ img{
     height:360px;
 }
 .invideo{
-   
     height:270px;
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -279,7 +277,6 @@ img{
 }
 .inner{
     width:100%;
-    /* border-radius:20px; */
     margin: auto;
     height:140px;
     

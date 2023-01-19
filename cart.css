@@ -1,0 +1,255 @@
+/* nav bar start here */
+body{
+    font-family: Titillium,sans-serif
+}
+.search-form {
+padding: 10px;
+font-size: 10px;
+border: 1px solid grey;
+float: left;
+/* width: 80%; */
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+#search-btn{
+float: right;
+padding: 10px;
+background:rgb(255, 104, 104);
+color: white;
+font-size: 10px;
+border: 1px solid grey;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-left: none;
+cursor: pointer;
+}
+#search-btn:hover{
+background: red;
+}
+
+#logo{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+#logo>div:nth-child(1){
+width: 30%;
+}
+#logo>div:nth-child(1) img{
+width: 50%;
+transition: 0.4s;
+}
+#logo>div:nth-child(1) img:hover{
+transform: scale(1.1);
+}
+#logo>div:nth-child(2){
+width: 50%;
+margin-top: 30px;
+}
+#logo>div:nth-child(2) img{
+width: 100%;
+}
+.menu-bar{
+height: 50px;
+background: rgb(245, 44, 44);
+text-align: center;
+}
+.menu-bar>div{
+display: flex;
+align-items: flex-start;
+}
+.menu-bar ul{
+display: inline-flex;
+list-style: none;
+}
+.menu-bar ul li{
+width: 120px;
+font-weight: bold;
+/* margin: 10px;
+padding: 10px; */
+}
+.menu-bar ul li a{
+text-decoration: none;
+color: black;
+}
+.dropdown{
+display: none;
+margin-top: 15px;
+position: absolute;
+left: 10px;
+width: 500px;
+background-color: white;
+}
+
+.top-nav ul{
+display: flex;
+justify-content: space-evenly;
+list-style: none;
+
+}
+.top-nav ul li{
+font-weight: 10px;
+
+}
+.top-nav ul li a{
+text-decoration: none;
+color: rgb(104, 104, 104);
+}
+.top-nav ul li a:hover{
+border-bottom: 10px solid red;
+}
+.menu-bar{
+    margin-bottom: 20px;
+}
+.menu-bar ul li:hover .dropdown{
+display: block;
+display: flex;
+position: relative;
+/* background: green; */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.menu-bar ul li:hover .dropdown ul{
+display: block;
+margin: 10px;
+}
+.menu-bar ul li:hover .dropdown ul li{
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted;
+text-align: left;
+}
+.menu-bar ul li:hover .dropdown ul li:last-child{
+border-bottom: none;
+}
+.menu-bar ul li:hover .dropdown ul li a:hover{
+color: red;
+}
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+.sticky + .content {
+padding-top: 60px;
+}
+
+
+/* nav bar ends here */
+
+
+
+/* cart container start here*/
+
+
+#cont{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart{
+    width: 60%;
+    height: 500px;
+    border: 1px solid rgb(32, 26, 26);
+}
+
+#price{
+    width: 37%;
+    height: 300px;
+    margin-top: 13px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#price>div:nth-child(1){
+    border-bottom: 1px dotted rgb(161, 158, 158);
+    text-align: center;
+}
+
+#price>div:nth-child(1) h3{
+    color: grey;
+}
+
+#price>div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+}
+
+#price>div:nth-child(2) h3,h4{
+    color: grey;
+}
+#price>div:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+}
+
+#price>div:nth-child(3) h3,h4{
+    color: grey;
+}
+
+#total-price{
+    margin-left: 45px;
+}
+
+#price>div:nth-child(4){
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-top: 1px dotted rgb(161, 158, 158);
+}
+
+.cart-cards{
+    width: 150%;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.plusminus{
+    /* width: 100%;
+    height: 50px; */
+    font-size: 25px;
+    text-align: center;
+    border: 28px;
+    border-radius: 10px;
+    background: rgb(243, 241, 241);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.plusminus:hover{
+    cursor: pointer;
+}
+.remove-btn{
+    background: none;
+    font-weight: bold;
+    border: none;
+    margin-left: 10px;
+}
+.remove-btn:hover{
+    color: rgb(255, 35, 35);
+    cursor: pointer;
+}
+
+.changer-div{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px;
+   
+}
+#checkout{
+    color: white;
+    margin-top: 10px;
+    padding: 20px 180px;
+    background-color: rgb(238, 74, 74);
+    border: none;
+    font-size: large;
+}
+#checkout:hover{
+    background-color: rgb(248, 17, 17);
+    cursor: pointer;
+}
