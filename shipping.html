@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shipping.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Shipping Address</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shipping</h1>
+        <p>Please enter your shipping details.</p>
+        <hr />
+        <div class="form">
+        <div class="fields fields--2">
+          <label class="field">
+            <span class="field__label" for="firstname">First name</span>
+            <input class="field__input" type="text" id="firstname" required></input>
+          </label>
+          <label class="field">
+            <span class="field__label" for="lastname">Last name</span>
+            <input class="field__input" type="text" id="lastname" />
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label" for="address">Address</span>
+          <input class="field__input" type="text" id="address" />
+        </label>
+        <label class="field">
+          <span class="field__label" for="country">Country</span>
+          <select class="field__input" id="country">
+            <option value=""></option>
+            <option value="India">India</option>
+          </select>
+        </label>
+        <div class="fields fields--3">
+          <label class="field">
+            <span class="field__label" for="zipcode">Zip code</span>
+            <input class="field__input" type="number" id="zipcode" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="city">City</span>
+            <input class="field__input" type="text" id="city" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="state">State</span>
+            <select class="field__input" id="state">
+              <option value=""></option>
+              <option value="Delhi">Delhi</option>
+            </select>
+          </label>
+        </div>
+        </div>
+        <hr>
+        <button class="button">Continue</button>
+     
+      </div>
+</body>
+</html>
+<script src="shipping.js"></script>

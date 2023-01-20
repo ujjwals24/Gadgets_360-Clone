@@ -74,11 +74,11 @@ function displayData(data){
                 }
             };
             if( IsAllready === true){
-                swal("Already in Favourites!", "Add Something else!", "warning")
+                swal("Already in Cart!", "Add Something else!", "warning")
             }else{
                 AddData.push(element);
                 localStorage.setItem("buy",JSON.stringify(AddData));
-                swal("Successfully Added to Favourite!", "See More!", "success")
+                swal("Successfully Added to Cart!", "See More!", "success")
             }
         })
 
