@@ -198,7 +198,7 @@ padding-top: 60px;
 }
 
 .cart-cards{
-    width: 150%;
+    width: 90%;
     padding: 10px;
     padding-left: 20px;
     display: flex;
@@ -252,4 +252,13 @@ padding-top: 60px;
 #checkout:hover{
     background-color: rgb(248, 17, 17);
     cursor: pointer;
+}
+.image-div{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+   
+}
+.image-div img{
+    width: 100%;
 }

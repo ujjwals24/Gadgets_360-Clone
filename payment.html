@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap">
+    <title>Payment</title>
+</head>
+<body>
+    <main class="container">
+        <div class="main">
+          <!-- Shipping Address Section  -->
+          <section class="shipping_address">
+            <h2 class="ship_head">Shipping Address</h2>
+            <div class="addresses">
+              <form action="">
+                <div class="address_primary">
+                  <div class="info">
+                    <p class="bold">Name:</p>
+                    <p class="light">John Doe</p>
+                  </div>
+                  <div class="info">
+                    <p class="bold">Phone:</p>
+                    <p class="light">(305) 345-5678</p>
+                  </div>
+                  <div class="info">
+                    <p class="bold">Address:</p>
+                    <p class="light">312 Everette Alley, Miami, FL 33147</p>
+                  </div>
+                </div>
+                <div class="address_secondary">
+                  <div class="info">
+                    <p class="bold">Name:</p>
+                    <p class="light">John Doe</p>
+                  </div>
+                  <div class="info">
+                    <p class="bold">Phone:</p>
+                    <p class="light">(305) 345-5678</p>
+                  </div>
+                  <div class="info">
+                    <p class="bold">Address:</p>
+                    <p class="light">209 Marigold Lane, Miami, FL 33169</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <span class="new_address">+ add new address</span>
+          </section>
+          <!-- Payment Method Section  -->
+          <section class="payment_method">
+            <h2 class="ship_head">Payment Method</h2>
+            <div class="card_info">
+              <div class="card_head">
+                <h2 class="card_title">Debit or Credit Card</h2>
+              </div>
+              <div class="card_types">
+                <img class="card_img" src="https://cdn-icons-png.flaticon.com/512/349/349221.png" alt="" />
+                <img class="card_img" src="https://cdn-icons-png.flaticon.com/512/349/349230.png" alt="" />
+                <img class="card_img" src="https://cdn-icons-png.flaticon.com/512/349/349228.png" alt="" />
+                <img class="card_img" src="https://img.icons8.com/fluency/512/mastercard.png" alt="" />
+              </div>
+              <form action="">
+                <input type="text" name="Name" value="" placeholder="Card Holder" maxlength="60" required />
+                <input type="text" name="Number" value="" placeholder="Card Number" maxlength="16" />
+                <div>
+                  <input type="text" name="Name" value="" placeholder="Expire" maxlength="4" />
+                  <input type="text" name="Name" value="" placeholder="CVC" maxlength="3" />
+                </div>
+              </form>
+              <span class="save_card">Save Card</span>
+            </div>
+            <div class="e_payment">
+              <div class="pay">
+                <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" alt="" />
+              </div>
+              <div class="pay">
+                <img src="https://cdn-icons-png.flaticon.com/512/5977/5977576.png" alt="" />
+              </div>
+              <div class="pay">
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196565.png" alt="" />
+              </div>
+            </div>
+            <button class="confirm_btn">Confirm</button>
+          </section>
+        </div>
+      </main>
+    
+</body>
+</html>

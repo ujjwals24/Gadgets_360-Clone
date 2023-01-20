@@ -16,18 +16,6 @@ let img=document.getElementById("animation")
     },3000)
 
 
-//     window.onscroll = function() {myFunction()}
-
-//     var navbar = document.getElementById("top-nav");
-//     var sticky = navbar.offsetTop;
-//     function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
-
 
 // cart item
 
@@ -56,7 +44,7 @@ function display(dataArr){
     let Contentdiv=document.createElement("div")
     Contentdiv.setAttribute("class","content-div")
     let title=document.createElement("h3")
-    title.innerText=element.title
+    title.innerText=element.brand
     let desc=document.createElement("p")
     desc.innerText=element.description
     let price=document.createElement("p")
@@ -128,3 +116,16 @@ let newprice=totalprice-price
 totalprice=newprice
 total(newprice)
 }
+
+let checkout=document.getElementById("checkout")
+
+checkout.addEventListener("click",()=>{
+  if(buyarr.length==0){
+    swal("Your Cart is Empty","Add Something to Cart","warning").then(function(){
+      window.location.href="index.html"
+    })
+  }
+  else if(buyarr.length>0){
+  window.location.href="shipping.html"
+  }
+})
