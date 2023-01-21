@@ -104,6 +104,7 @@ function dlt(element,index){
   let newprice=totalprice-element.price
   total(newprice)
   display(buyarr)
+  window.location.href="cart.html"
 }
 
 function increase(price){
