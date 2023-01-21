@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div id="logo">
+        <div>
+        <img src="https://i.ibb.co/hfnXL9K/tech-gadgets-low-resolution-logo-black-on-white-background.png" alt="">
+        </div>
+        <div id="animation">
+            <img src="https://tpc.googlesyndication.com/simgad/10118733611423933133" alt="">
+            
+        </div>
+        </div>
+    <div class="top-nav">
+        <ul>
+            <li><a href="mobiles.html">MOBILES</a></li>
+            <li><a href="AUDIO.html">AUDIO</a></li>
+            <li><a href="#">AUTO EXPO 2023</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">GUIDE</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">APPS</a></li>
+            <li><a href="#">TABLETS</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="login.html">SIGN-IN</a></li>
+            <li><a href="createAcc.html">SIGN-UP</a></li>
+            <form id="serach">
+                <input class="search-form" type="text" placeholder="Search here...">
+                <button type="submit" id="search-btn"><i class="fa fa-search"></i></button>
+              </form>
+        </ul>
+
+    </div>
+    <div class="menu-bar">
+        <div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">GUIDE</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">VIDEOS</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="#">LATEST</a></li>
+                        <li><a href="#">BUYING GUIDES</a></li>
+                        <li><a href="#">CRYPTOCURRENCY</a></li>
+                        <li><a href="#">EVENTS</a></li>
+                        <li><a href="#">HOW TOS</a></li>
+                        <li><a href="#">SPONSORED</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Reviews and First Looks</a></li>
+                        <li><a href="#">Hindi</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li><a href="">PODCASTS</a></li>
+            <li id="finder"><a href="">PRODUCT</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="">Mobiles</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">TV</a></li>
+                                        <li><a href="">Tablets</a></li>
+                                        <li><a href="">Smart Watches</a></li>
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Cameras</a></li>
+                                        <li><a href="">Gaming Consoles</a></li>
+                                        <li><a href="">Smart Bands</a></li>
+                                        <li><a href="">Speakers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Smart Speakers</a></li>
+                        <li><a href="">AC</a></li>
+                        <li><a href="">Games</a></li>
+                        <li><a href="">Refrigerator</a></li>
+                        <li><a href="">Air Cooler</a></li>
+                        <li><a href="">Air Purifier</a></li>
+                        <li><a href="">Washing Machine</a></li>
+                        <li><a href="">Inverter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li><a href=""> BARNDS</a></li>
+            <li><a href="">RECHARGE</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="">DTH RECHARGE</a></li>
+                        <li><a href="">MOBILE RECHARGE</a></li>
+                        <li><a href="">BROADBAND RECHARGE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+            <li><a href="">MORE</a>
+            <div class="dropdown">
+                <div>
+                    <ul>
+                        <li><a href="">Cryptocurrency Prices</a></li>
+                        <li><a href="">Digital Gold</a></li>
+                        <li><a href="">Gold Rate</a></li>
+                        <li><a href="">Amazon Sale</a></li>
+                        <li><a href="">Flipkart Sale</a></li>
+                        <li><a href="">Movies</a></li>
+                        <li>Web Series</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Service Centers</a></li>
+                        <li><a href="">Smart Home</a></li>
+                        <li><a href="">Community</a></li> 
+                         <li><a href="">Finance</a></li>
+                         <li><a href="">b360</a></li>
+                          <li><a href="">Silver Rate</a></li>
+                        <li><a href="">Opinions</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </li>
+        </ul>
+        <button style="background-color: rgb(243, 49, 49); border: none;"><a href="cart.html"> <span id="cart"></span><i class="fa fa-shopping-cart" style="font-size:38px;color:white"></i></a></button>
+    </div>
+  
+    </div>
+    <div id="cont">
+        <div id="order-container">
+            <!-- here all the card are appended -->
+        </div>
+        <div id="price">
+            <!-- billing price -->
+            <div>
+                <h3>PRICE DETAILS</h3>
+            </div>
+            <div>
+                <h3>Total Items</h3>
+                <h4 id="total-items">0</h4>
+            </div>
+            <div>
+                <h3>Price</h3>
+                <h4 class="total-price">0</h4>
+            </div>
+            <div>
+                <h3>Total Price</h3>
+                <h4 class="total-prce">0</h4>
+            </div>
+            <div>
+               <button id="checkout">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="cart.js"></script>
